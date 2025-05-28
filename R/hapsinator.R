@@ -8,8 +8,7 @@
 #' @param handfulSize handful size (small, medium or large)
 #' 
 #' @export 
-#' @return print(pricePer100g) 
-#' @examples bla
+#' @return print(pricePer100g)
 
 hapsinator <- function(pricePer100g, snollerMoney, numRows, numCols, handfulSize) {
     print(pricePer100g)

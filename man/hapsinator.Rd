@@ -23,6 +23,3 @@ print(pricePer100g)
 \description{
 hapsinator
 }
-\examples{
-bla
-}

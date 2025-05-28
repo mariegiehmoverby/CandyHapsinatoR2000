@@ -4,6 +4,8 @@
 # CandyHapsinatoR2000
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of CandyHapsinatoR2000 is to …
