@@ -2,8 +2,9 @@ Package: CandyHapsinatoR2000
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Marie Giehm", "Overby", , "mariegiehmoverby@live.dk", role = c("aut"))
+    person("Magnus Bent Erik", "van Bolhuis", , "magnusbevb@gmail.com", role = c("aut"))
+    person("Mads Munk", "Nielsen", , "madnie19@student.aau.dk", role = c("aut"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
