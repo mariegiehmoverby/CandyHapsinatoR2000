@@ -1,8 +1,8 @@
 #' @title Print method for hapsinatoR objects
 #' @description Prints a summary of the hapsinatoR object.
 #' @param x An object of class \code{hapsinatoR}.
-#' @export
 #' @method print hapsinatoR
+#' @export
 print.hapsinatoR <- function(x) {
   x <- validate_hapsinatoR(x)
   cat("A hapsinatoR object\n")
@@ -21,3 +21,4 @@ print.hapsinatoR <- function(x) {
     cat("\n")
   }
 }
+

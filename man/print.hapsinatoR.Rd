@@ -4,7 +4,7 @@
 \alias{print.hapsinatoR}
 \title{Print method for hapsinatoR objects}
 \usage{
-\method{print}{hapsinatoR}(x, ...)
+\method{print}{hapsinatoR}(x)
 }
 \arguments{
 \item{x}{An object of class \code{hapsinatoR}.}

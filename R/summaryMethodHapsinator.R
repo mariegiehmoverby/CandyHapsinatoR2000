@@ -3,8 +3,8 @@
 #' total weight to mix, number of unique candies, and coordinates of the candies to grab.
 #' @param x An object of class \code{hapsinatoR}, typically created by the \code{hapsinatoR()} function.
 #' @return Returns a summary on the hapsinatoR object
-#' @export
 #' @method summary hapsinatoR 
+#' @export
 summary.hapsinatoR <- function(x) {
   x <- validate_hapsinatoR(x)
   
