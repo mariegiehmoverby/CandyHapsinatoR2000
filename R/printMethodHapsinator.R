@@ -3,7 +3,7 @@
 #' @param x An object of class \code{hapsinatoR}.
 #' @method print hapsinatoR
 #' @export
-print.hapsinatoR <- function(x) {
+print.hapsinatoR <- function(x, ...) {
   x <- validate_hapsinatoR(x)
   cat("A hapsinatoR object\n")
   cat("Number of candies:", nrow(x$candyShelf), "\n")

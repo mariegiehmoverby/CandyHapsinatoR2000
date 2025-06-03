@@ -5,7 +5,7 @@
 #' @return Returns a summary on the hapsinatoR object
 #' @method summary hapsinatoR 
 #' @export
-summary.hapsinatoR <- function(x) {
+summary.hapsinatoR <- function(x, ...) {
   x <- validate_hapsinatoR(x)
   
   cat("=================================\n")
