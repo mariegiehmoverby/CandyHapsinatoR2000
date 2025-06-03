@@ -6,6 +6,8 @@
 #' @export
 #' @method summary hapsinatoR 
 summary.hapsinatoR <- function(x) {
+  x <- validate_hapsinatoR(x)
+  
   cat("=================================\n")
   cat("Summary of hapsinatoR object\n")
   cat("=================================\n")

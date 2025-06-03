@@ -3,14 +3,15 @@
 #' @param x An object of class \code{hapsinatoR}.
 #' @export
 #' @method print hapsinatoR
-print.hapsinatoR <- function(x, ...) {
+print.hapsinatoR <- function(x) {
+  x <- validate_hapsinatoR(x)
   cat("A hapsinatoR object\n")
-  cat("Number of candy tiles:", nrow(x$candyShelf), "\n")
+  cat("Number of candies:", nrow(x$candyShelf), "\n")
   cat("Tile statuses:\n")
   print(table(x$candyShelf$status))
 
   grab_tiles <- subset(x$candyShelf, status == "GRAB")
-  cat("Coordinates of GRAB tiles:\n")
+  cat("Coordinates of candies to GRAB:\n")
   
   if (nrow(grab_tiles) == 0) {
     cat("None\n")
