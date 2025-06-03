@@ -2,7 +2,7 @@ Package: CandyHapsinatoR2000
 Title: The CandyHapsinatoR2000
 Version: 0.0.0.9000.069
 Authors@R: c(
-    person("Marie Giehm", "Overby", , "mariegiehmoverby@live.dk", role = c("cre")),
+    person("Marie Giehm", "Overby", , "mariegiehmoverby@live.dk", role = c("cre", "aut")),
     person("Magnus Bent Erik", "van Bolhuis", , "magnusbevb@gmail.com", role = c("aut")),
     person("Mads Munk", "Nielsen", , "madnie19@student.aau.dk", role = c("aut"))
     )
