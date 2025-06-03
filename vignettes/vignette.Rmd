@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-This vignette is based on `CandyHapsinator2000` version `r packageVersion("CandyHapsinator2000")` which is avaiable on github at [https://github.com/mariegiehmoverby/CandyHapsinatoR2000].
+This vignette is based on `CandyHapsinatoR2000` version `r packageVersion("CandyHapsinatoR2000")` which is avaiable on github at [https://github.com/mariegiehmoverby/CandyHapsinatoR2000].
 
 ```{r}
 library(CandyHapsinatoR2000)
