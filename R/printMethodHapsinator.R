@@ -12,7 +12,7 @@ print.hapsinatoR <- function(x, ...) {
 
   grab_tiles <- subset(x$candyShelf, status == "GRAB")
   cat("Coordinates of candies to GRAB:\n")
-  
+
   if (nrow(grab_tiles) == 0) {
     cat("None\n")
   } else {
@@ -21,4 +21,3 @@ print.hapsinatoR <- function(x, ...) {
     cat("\n")
   }
 }
-
