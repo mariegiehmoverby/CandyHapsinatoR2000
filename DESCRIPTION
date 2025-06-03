@@ -1,12 +1,12 @@
 Package: CandyHapsinatoR2000
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: The CandyHapsinatoR2000
+Version: 0.0.0.9000.069
 Authors@R: c(
     person("Marie Giehm", "Overby", , "mariegiehmoverby@live.dk", role = c("cre")),
     person("Magnus Bent Erik", "van Bolhuis", , "magnusbevb@gmail.com", role = c("aut")),
     person("Mads Munk", "Nielsen", , "madnie19@student.aau.dk", role = c("aut"))
     )
-Description: What the package does (one paragraph).
+Description: The CandyHapsinatoR2000 includes a function which helps you choose what candy to mix whenever you are "sulten for sjov".
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

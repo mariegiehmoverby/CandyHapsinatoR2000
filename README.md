@@ -21,17 +21,7 @@ devtools::install_github("mariegiehmoverby/CandyHapsinatoR2000")
 ## Vignette
 
 You can find the vignette for CandyHapsinatoR2000
-[here](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes)
-
-``` r
-vignette("CandyHapsinatoR2000")
-#> Warning: vignette 'CandyHapsinatoR2000' not found
-```
-
-``` r
-browseVignettes("CandyHapsinatoR2000")
-#> No vignettes found by browseVignettes("CandyHapsinatoR2000")
-```
+[HERE](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes)
 
 ## Example
 
@@ -51,9 +41,9 @@ print(candy)
 #> Tile statuses:
 #> 
 #> don't  GRAB 
-#>    38    26 
+#>    39    25 
 #> Coordinates of candies to GRAB:
-#> (3,1)  (4,1)  (7,1)  (1,2)  (2,2)  (3,2)  (5,2)  (7,2)  (8,2)  (1,3)  (2,3)  (2,4)  (4,4)  (6,4)  (4,5)  (5,5)  (7,5)  (2,6)  (3,6)  (4,6)  (5,6)  (6,6)  (2,7)  (3,7)  (3,8)  (7,8)
+#> (1,1)  (3,1)  (4,1)  (7,1)  (8,1)  (1,2)  (2,2)  (4,2)  (8,2)  (2,3)  (3,3)  (4,3)  (3,4)  (2,5)  (3,5)  (5,5)  (6,5)  (8,5)  (3,6)  (7,6)  (3,7)  (5,7)  (6,7)  (7,7)  (4,8)
 ```
 
 Summary of the hapsinatoR object will give you a summary of the candy
@@ -67,10 +57,10 @@ summary(candy)
 #> Number of different candies: 64 
 #> Number of candies to GRAB: 32 
 #> Total grams to mix: 1000 
-#> Total grams mixed: 1006 
+#> Total grams mixed: 991 
 #> =================================
 #> Candies to GRAB are at locations:
-#> (3,1)  (4,1)  (7,1)  (1,2)  (2,2)  (3,2)  (5,2)  (7,2)  (8,2)  (1,3)  (2,3)  (2,4)  (4,4)  (6,4)  (4,5)  (5,5)  (7,5)  (2,6)  (3,6)  (4,6)  (5,6)  (6,6)  (2,7)  (3,7)  (3,8)  (7,8)
+#> (1,1)  (3,1)  (4,1)  (7,1)  (8,1)  (1,2)  (2,2)  (4,2)  (8,2)  (2,3)  (3,3)  (4,3)  (3,4)  (2,5)  (3,5)  (5,5)  (6,5)  (8,5)  (3,6)  (7,6)  (3,7)  (5,7)  (6,7)  (7,7)  (4,8)
 ```
 
 Plotting the hapsinatoR object will give you a visual representation of

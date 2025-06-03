@@ -30,15 +30,8 @@ devtools::install_github("mariegiehmoverby/CandyHapsinatoR2000")
 ```
 
 ## Vignette
-You can find the vignette for CandyHapsinatoR2000 [here](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes)
+You can find the vignette for CandyHapsinatoR2000 [HERE](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes)
 
-```{r}
-vignette("CandyHapsinatoR2000")
-```
-
-```{r}
-browseVignettes("CandyHapsinatoR2000")
-```
 
 ## Example
 
