@@ -14,6 +14,91 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+This vignette is based on `CandyHapsinator2000` version `r packageVersion("CandyHapsinator2000")` which is avaiable on github at [https://github.com/mariegiehmoverby/CandyHapsinatoR2000].
+
+```{r}
 library(CandyHapsinatoR2000)
 ```
+
+# Different handful sizes for hapsinatoR 
+The `hapsinatoR` take various arguments. One of them is handful `handfulSize` which is shown below. 
+
+## small handful size
+```{r}
+small_hapsinator <- hapsinatoR(pricePer100g = 11.95,
+                               snollerMoney = 46,
+                               numRows = 5,
+                               numCols = 20,
+                               handfulSize = "small")
+
+summary(small_hapsinator)
+plot(small_hapsinator)
+```
+## medium handful size
+```{r}
+medium_hapsinator <- hapsinatoR(pricePer100g = 11.95,
+           snollerMoney = 46,
+           numRows = 5,
+           numCols = 20,
+           handfulSize = "medium")
+
+summary(medium_hapsinator)
+```
+
+## Large handful size
+```{r}
+large_hapsinator <- hapsinatoR(pricePer100g = 11.95,
+           snollerMoney = 46,
+           numRows = 5,
+           numCols = 20,
+           handfulSize = "large")
+
+summary(large_hapsinator)
+```
+
+
+# Friday price for the candy
+We all know that 'mix your own candy' prices are low on fridays to accommodate Fridaytamtam on television, so let's see how the `hapsinatoR` handles this. 
+
+```{r}
+# hapsinator with 10 kr. per  100g crandy
+friday_hapsinator_10 <- hapsinatoR(pricePer100g = 10,
+           snollerMoney = 50,
+           numRows = 6,
+           numCols = 25,
+           handfulSize = "small")
+
+summary(friday_hapsinator_10)
+```
+
+
+```{r}
+# hapsinator with 8.95 kr. per  100g crandy
+friday_hapsinator_8_95 <- hapsinatoR(pricePer100g = 8.95,
+           snollerMoney = 50,
+           numRows = 6,
+           numCols = 25,
+           handfulSize = "small")
+
+summary(friday_hapsinator_8_95)
+```
+
+# Visualising the output of the `hapsinatoR`
+
+```{r}
+plot(medium_hapsinator)
+```
+
+```{r}
+plot(large_hapsinator)
+```
+
+
+```{r}
+plot(friday_hapsinator_10)
+```
+
+```{r}
+plot(friday_hapsinator_8_95)
+```
+
