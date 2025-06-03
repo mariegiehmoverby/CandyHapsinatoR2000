@@ -1,9 +1,10 @@
 #' @title Print method for hapsinatoR objects
 #' @description Prints a summary of the hapsinatoR object.
 #' @param x An object of class \code{hapsinatoR}.
+#' @param ... Additional arguments (currently ignored).
 #' @method print hapsinatoR
 #' @export
-print.hapsinatoR <- function(x) {
+print.hapsinatoR <- function(x, ...) {
   x <- validate_hapsinatoR(x)
   cat("A hapsinatoR object\n")
   cat("Number of candies:", nrow(x$candyShelf), "\n")
@@ -12,7 +13,7 @@ print.hapsinatoR <- function(x) {
 
   grab_tiles <- subset(x$candyShelf, status == "GRAB")
   cat("Coordinates of candies to GRAB:\n")
-  
+
   if (nrow(grab_tiles) == 0) {
     cat("None\n")
   } else {
@@ -21,4 +22,3 @@ print.hapsinatoR <- function(x) {
     cat("\n")
   }
 }
-

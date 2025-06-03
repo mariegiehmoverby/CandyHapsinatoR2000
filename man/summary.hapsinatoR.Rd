@@ -4,10 +4,12 @@
 \alias{summary.hapsinatoR}
 \title{Summary method for hapsinatoR objects}
 \usage{
-\method{summary}{hapsinatoR}(x)
+\method{summary}{hapsinatoR}(object, ...)
 }
 \arguments{
-\item{x}{An object of class \code{hapsinatoR}, typically created by the \code{hapsinatoR()} function.}
+\item{object}{An object of class \code{hapsinatoR}, typically created by the \code{hapsinatoR()} function.}
+
+\item{...}{Additional arguments (currently ignored).}
 }
 \value{
 Returns a summary on the hapsinatoR object

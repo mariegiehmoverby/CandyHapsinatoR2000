@@ -4,10 +4,12 @@
 \alias{plot.hapsinatoR}
 \title{Plot a hapsinatoR object}
 \usage{
-\method{plot}{hapsinatoR}(x)
+\method{plot}{hapsinatoR}(x, ...)
 }
 \arguments{
 \item{x}{An object of class \code{hapsinatoR}, typically returned by \code{hapsinatoR()}.}
+
+\item{...}{Additional arguments (currently ignored).}
 }
 \value{
 A ggplot2 object.
