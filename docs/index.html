@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What the Package Does (One Line, Title Case) • CandyHapsinatoR2000</title>
+<title>The CandyHapsinatoR2000 • CandyHapsinatoR2000</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="What the Package Does (One Line, Title Case)">
-<meta property="og:description" content="What the package does (one paragraph).">
+<script src="pkgdown.js"></script><meta property="og:title" content="The CandyHapsinatoR2000">
+<meta property="og:description" content='The CandyHapsinatoR2000 includes a function which helps you choose what candy to mix whenever you are "sulten for sjov".'>
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">CandyHapsinatoR2000</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.0.9000.069</span>
       </span>
     </div>
 
@@ -79,36 +79,55 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>The goal of CandyHapsinatoR2000 is to …</p>
+<p>The goal of CandyHapsinatoR2000 is to decide what candy to mix.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install the development version of CandyHapsinatoR2000 from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install the development version of CandyHapsinatoR2000 from <a href="https://github.com/mariegiehmoverby/CandyHapsinatoR2000" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
-<span><span class="fu">pak</span><span class="fu">::</span><span class="fu">pak</span><span class="op">(</span><span class="st">"mariegiehmoverby/CandyHapsinatoR2000"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Install the package</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"mariegiehmoverby/CandyHapsinatoR2000"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="vignette">Vignette<a class="anchor" aria-label="anchor" href="#vignette"></a>
+</h2>
+<p>You can find the vignette for CandyHapsinatoR2000 <a href="https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes" class="external-link">HERE</a></p>
 </div>
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<p>This is a basic example which shows you can use the function</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/mariegiehmoverby/CandyHapsinatoR2000" class="external-link">CandyHapsinatoR2000</a></span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
-<p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
+<span><span class="va">candy</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/hapsinatoR.html">hapsinatoR</a></span><span class="op">(</span>pricePer100g <span class="op">=</span> <span class="fl">10</span>, snollerMoney <span class="op">=</span> <span class="fl">100</span>, numRows <span class="op">=</span> <span class="fl">8</span>, numCols <span class="op">=</span> <span class="fl">8</span>, handfulSize <span class="op">=</span> <span class="st">"large"</span><span class="op">)</span></span></code></pre></div>
+<p>The input in <code><a href="https://rdrr.io/r/base/print.html" class="external-link">print()</a></code> must be a hapsinatoR object.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">cars</span><span class="op">)</span></span>
-<span><span class="co">#&gt;      speed           dist       </span></span>
-<span><span class="co">#&gt;  Min.   : 4.0   Min.   :  2.00  </span></span>
-<span><span class="co">#&gt;  1st Qu.:12.0   1st Qu.: 26.00  </span></span>
-<span><span class="co">#&gt;  Median :15.0   Median : 36.00  </span></span>
-<span><span class="co">#&gt;  Mean   :15.4   Mean   : 42.98  </span></span>
-<span><span class="co">#&gt;  3rd Qu.:19.0   3rd Qu.: 56.00  </span></span>
-<span><span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span></span></code></pre></div>
-<p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date. <code><a href="https://devtools.r-lib.org/reference/build_rmd.html" class="external-link">devtools::build_readme()</a></code> is handy for this.</p>
-<p>You can also embed plots, for example:</p>
-<p><img src="reference/figures/README-pressure-1.png" width="100%"></p>
-<p>In that case, don’t forget to commit and push the resulting figure files, so they display on GitHub and CRAN.</p>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">candy</span><span class="op">)</span></span>
+<span><span class="co">#&gt; A hapsinatoR object</span></span>
+<span><span class="co">#&gt; Number of candies: 64 </span></span>
+<span><span class="co">#&gt; Tile statuses:</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; don't  GRAB </span></span>
+<span><span class="co">#&gt;    39    25 </span></span>
+<span><span class="co">#&gt; Coordinates of candies to GRAB:</span></span>
+<span><span class="co">#&gt; (1,1)  (3,1)  (4,1)  (7,1)  (8,1)  (1,2)  (2,2)  (4,2)  (8,2)  (2,3)  (3,3)  (4,3)  (3,4)  (2,5)  (3,5)  (5,5)  (6,5)  (8,5)  (3,6)  (7,6)  (3,7)  (5,7)  (6,7)  (7,7)  (4,8)</span></span></code></pre></div>
+<p>Summary of the hapsinatoR object will give you a summary of the candy mix.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">candy</span><span class="op">)</span></span>
+<span><span class="co">#&gt; =================================</span></span>
+<span><span class="co">#&gt; Summary of hapsinatoR object</span></span>
+<span><span class="co">#&gt; =================================</span></span>
+<span><span class="co">#&gt; Number of different candies: 64 </span></span>
+<span><span class="co">#&gt; Number of candies to GRAB: 32 </span></span>
+<span><span class="co">#&gt; Total grams to mix: 1000 </span></span>
+<span><span class="co">#&gt; Total grams mixed: 991 </span></span>
+<span><span class="co">#&gt; =================================</span></span>
+<span><span class="co">#&gt; Candies to GRAB are at locations:</span></span>
+<span><span class="co">#&gt; (1,1)  (3,1)  (4,1)  (7,1)  (8,1)  (1,2)  (2,2)  (4,2)  (8,2)  (2,3)  (3,3)  (4,3)  (3,4)  (2,5)  (3,5)  (5,5)  (6,5)  (8,5)  (3,6)  (7,6)  (3,7)  (5,7)  (6,7)  (7,7)  (4,8)</span></span></code></pre></div>
+<p>Plotting the hapsinatoR object will give you a visual representation of what candy to mix.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">candy</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-example%20plot-1.png" width="100%"></p>
 </div>
 </div>
   </div>
