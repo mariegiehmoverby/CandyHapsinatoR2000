@@ -4,10 +4,12 @@
 \alias{print.hapsinatoR}
 \title{Print method for hapsinatoR objects}
 \usage{
-\method{print}{hapsinatoR}(x)
+\method{print}{hapsinatoR}(x, ...)
 }
 \arguments{
 \item{x}{An object of class \code{hapsinatoR}.}
+
+\item{...}{Additional arguments (currently ignored).}
 }
 \description{
 Prints a summary of the hapsinatoR object.

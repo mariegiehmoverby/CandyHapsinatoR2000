@@ -1,6 +1,7 @@
 #' @title Print method for hapsinatoR objects
 #' @description Prints a summary of the hapsinatoR object.
 #' @param x An object of class \code{hapsinatoR}.
+#' @param ... Additional arguments (currently ignored).
 #' @method print hapsinatoR
 #' @export
 print.hapsinatoR <- function(x, ...) {

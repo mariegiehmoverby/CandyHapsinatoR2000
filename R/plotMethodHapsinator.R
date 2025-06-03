@@ -1,6 +1,7 @@
 #' @title Plot a hapsinatoR object
 #' @description Creates a tile plot of the candy shelf using ggplot2.
 #' @param x An object of class \code{hapsinatoR}, typically returned by \code{hapsinatoR()}.
+#' @param ... Additional arguments (currently ignored).
 #' @return A ggplot2 object.
 #' @export
 #' @import ggplot2

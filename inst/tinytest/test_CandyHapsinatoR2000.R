@@ -6,6 +6,3 @@ expect_equal(class(hapsinatoR()$numHaps), "numeric")
 expect_equal(class(hapsinatoR()$gramsToMix), "numeric")
 expect_equal(class(hapsinatoR()$uniqueCandies), "numeric")
 expect_equal(class(hapsinatoR()$hapsSizes), "numeric")
-
-# expect_equal(class(hapsinator(100)), "character") # should fail
-
