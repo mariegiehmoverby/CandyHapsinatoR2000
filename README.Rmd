@@ -53,6 +53,6 @@ summary(candy)
 ```
 
 Plotting the hapsinatoR object will give you a visual representation of what candy to mix.
-```{r example plot}
+```{r example_plot}
 plot(candy)
 ```

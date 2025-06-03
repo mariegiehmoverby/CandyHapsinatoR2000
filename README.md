@@ -41,9 +41,9 @@ print(candy)
 #> Tile statuses:
 #> 
 #> don't  GRAB 
-#>    39    25 
+#>    40    24 
 #> Coordinates of candies to GRAB:
-#> (1,1)  (3,1)  (4,1)  (7,1)  (8,1)  (1,2)  (2,2)  (4,2)  (8,2)  (2,3)  (3,3)  (4,3)  (3,4)  (2,5)  (3,5)  (5,5)  (6,5)  (8,5)  (3,6)  (7,6)  (3,7)  (5,7)  (6,7)  (7,7)  (4,8)
+#> (3,1)  (5,1)  (7,1)  (2,2)  (8,2)  (4,3)  (6,3)  (7,3)  (8,3)  (2,4)  (6,4)  (7,4)  (4,5)  (1,6)  (3,6)  (5,6)  (6,6)  (2,7)  (3,7)  (4,7)  (5,7)  (7,7)  (4,8)  (6,8)
 ```
 
 Summary of the hapsinatoR object will give you a summary of the candy
@@ -57,10 +57,10 @@ summary(candy)
 #> Number of different candies: 64 
 #> Number of candies to GRAB: 32 
 #> Total grams to mix: 1000 
-#> Total grams mixed: 991 
+#> Total grams mixed: 1002 
 #> =================================
 #> Candies to GRAB are at locations:
-#> (1,1)  (3,1)  (4,1)  (7,1)  (8,1)  (1,2)  (2,2)  (4,2)  (8,2)  (2,3)  (3,3)  (4,3)  (3,4)  (2,5)  (3,5)  (5,5)  (6,5)  (8,5)  (3,6)  (7,6)  (3,7)  (5,7)  (6,7)  (7,7)  (4,8)
+#> (3,1)  (5,1)  (7,1)  (2,2)  (8,2)  (4,3)  (6,3)  (7,3)  (8,3)  (2,4)  (6,4)  (7,4)  (4,5)  (1,6)  (3,6)  (5,6)  (6,6)  (2,7)  (3,7)  (4,7)  (5,7)  (7,7)  (4,8)  (6,8)
 ```
 
 Plotting the hapsinatoR object will give you a visual representation of
@@ -70,4 +70,4 @@ what candy to mix.
 plot(candy)
 ```
 
-<img src="man/figures/README-example plot-1.png" width="100%" />
+<img src="man/figures/README-example_plot-1.png" width="100%" />
