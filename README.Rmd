@@ -2,7 +2,6 @@
 output: github_document
 ---
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -19,38 +18,48 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of CandyHapsinatoR2000 is to ...
+The goal of CandyHapsinatoR2000 is to decide what candy to mix.
 
 ## Installation
 
-You can install the development version of CandyHapsinatoR2000 from [GitHub](https://github.com/) with:
+You can install the development version of CandyHapsinatoR2000 from [GitHub](https://github.com/mariegiehmoverby/CandyHapsinatoR2000) with:
 
-``` r
-# install.packages("pak")
-pak::pak("mariegiehmoverby/CandyHapsinatoR2000")
+```{r, message = FALSE, warning = FALSE, results = 'hide'}
+# Install the package
+devtools::install_github("mariegiehmoverby/CandyHapsinatoR2000")
+```
+
+## Vignette
+You can find the vignette for CandyHapsinatoR2000 [here](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes)
+
+```{r}
+vignette("CandyHapsinatoR2000")
+```
+
+```{r}
+browseVignettes("CandyHapsinatoR2000")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you can use the function
 
-```{r example}
+```{r, example}
 library(CandyHapsinatoR2000)
-## basic example code
+candy <- hapsinatoR(pricePer100g = 10, snollerMoney = 100, numRows = 8, numCols = 8, handfulSize = "large")
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
+The input in `print()` must be a hapsinatoR object.
+```{r example print}
+print(candy)
 ```
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
+Summary of the hapsinatoR object will give you a summary of the candy mix.
+```{r example summary}
+summary(candy)
 ```
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+Plotting the hapsinatoR object will give you a visual representation of what candy to mix.
+```{r example plot}
+plot(candy)
+```

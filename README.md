@@ -1,6 +1,4 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # CandyHapsinatoR2000
 
 <!-- badges: start -->
@@ -8,47 +6,78 @@
 [![R-CMD-check](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of CandyHapsinatoR2000 is to …
+The goal of CandyHapsinatoR2000 is to decide what candy to mix.
 
 ## Installation
 
 You can install the development version of CandyHapsinatoR2000 from
-[GitHub](https://github.com/) with:
+[GitHub](https://github.com/mariegiehmoverby/CandyHapsinatoR2000) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("mariegiehmoverby/CandyHapsinatoR2000")
+# Install the package
+devtools::install_github("mariegiehmoverby/CandyHapsinatoR2000")
+```
+
+## Vignette
+
+You can find the vignette for CandyHapsinatoR2000
+[here](https://github.com/mariegiehmoverby/CandyHapsinatoR2000/tree/master/vignettes)
+
+``` r
+vignette("CandyHapsinatoR2000")
+#> Warning: vignette 'CandyHapsinatoR2000' not found
+```
+
+``` r
+browseVignettes("CandyHapsinatoR2000")
+#> No vignettes found by browseVignettes("CandyHapsinatoR2000")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you can use the function
 
 ``` r
 library(CandyHapsinatoR2000)
-## basic example code
+candy <- hapsinatoR(pricePer100g = 10, snollerMoney = 100, numRows = 8, numCols = 8, handfulSize = "large")
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+The input in `print()` must be a hapsinatoR object.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+print(candy)
+#> A hapsinatoR object
+#> Number of candies: 64 
+#> Tile statuses:
+#> 
+#> don't  GRAB 
+#>    38    26 
+#> Coordinates of candies to GRAB:
+#> (3,1)  (4,1)  (7,1)  (1,2)  (2,2)  (3,2)  (5,2)  (7,2)  (8,2)  (1,3)  (2,3)  (2,4)  (4,4)  (6,4)  (4,5)  (5,5)  (7,5)  (2,6)  (3,6)  (4,6)  (5,6)  (6,6)  (2,7)  (3,7)  (3,8)  (7,8)
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+Summary of the hapsinatoR object will give you a summary of the candy
+mix.
 
-You can also embed plots, for example:
+``` r
+summary(candy)
+#> =================================
+#> Summary of hapsinatoR object
+#> =================================
+#> Number of different candies: 64 
+#> Number of candies to GRAB: 32 
+#> Total grams to mix: 1000 
+#> Total grams mixed: 1006 
+#> =================================
+#> Candies to GRAB are at locations:
+#> (3,1)  (4,1)  (7,1)  (1,2)  (2,2)  (3,2)  (5,2)  (7,2)  (8,2)  (1,3)  (2,3)  (2,4)  (4,4)  (6,4)  (4,5)  (5,5)  (7,5)  (2,6)  (3,6)  (4,6)  (5,6)  (6,6)  (2,7)  (3,7)  (3,8)  (7,8)
+```
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+Plotting the hapsinatoR object will give you a visual representation of
+what candy to mix.
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+``` r
+plot(candy)
+```
+
+<img src="man/figures/README-example plot-1.png" width="100%" />
