@@ -29,4 +29,3 @@ summary.hapsinatoR <- function(object, ...) {
   }
 }
 
-summary(test)
