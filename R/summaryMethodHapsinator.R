@@ -3,7 +3,7 @@
 #' total weight to mix, number of unique tiles, and their coordinates.
 #' @param object An object of class \code{hapsinatoR}, typically created by the \code{hapsinatoR()} function.
 #' @param ... Additional arguments (currently unused).
-#' @return Invisibly returns the input object.
+#' @return Returns a summary on the output from the hapsinatoR object
 #' @export
 #' @method summary hapsinatoR 
 summary.hapsinatoR <- function(object, ...) {
@@ -29,11 +29,4 @@ summary.hapsinatoR <- function(object, ...) {
   }
 }
 
-summary(x)
-
-sum(x$uniqueCandies)
-
-
-
-# # count times highlighted
-# hapsinatoR(snollerMoney = 200) %>% dplyr::count(x, y, name = "times_highlighted")
+summary(test)
