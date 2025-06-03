@@ -13,20 +13,38 @@ hapsinatoR(
 )
 }
 \arguments{
-\item{pricePer100g}{price of 100g of candy}
+\item{pricePer100g}{number denoting the price of 100g of candy}
 
-\item{snollerMoney}{money to spend on candy}
+\item{snollerMoney}{number denoting the money to spend on candy}
 
-\item{numRows}{number of rows in the candy shelf}
+\item{numRows}{integer denoting the number of rows in the candy shelf}
 
-\item{numCols}{number of columns in the candy shelf}
+\item{numCols}{integer denoting the number of columns in the candy shelf}
 
-\item{handfulSize}{handful size (small, medium or large)}
+\item{handfulSize}{factor denoting handful size (small, medium or large)}
 }
 \value{
-An object of class \sQuote{hapsinatoR}.
-An object of \code{\link{class}} \code{"hapsinatoR"} is a list containing the following components
+\code{hapsinatoR} returns an object of \code{\link{class}} \code{"hapsinatoR"}, which is a list containing the following components:
+\describe{
+\item{\code{candyShelf}}{(x,y) coordinates with positions to grab candy}
+\item{\code{numHaps}}{Number of candy hapsers to make}
+\item{\code{gramsToMix}}{Number denoting the amount of candy (in grams) you aim to mix}
+\item{\code{uniqueCandies}}{Number of unique pieces of candy}
+\item{\code{hapsSizes}}{Vector of length \code{numHaps} denoting the sizes of each haps}
+}
 }
 \description{
-CandyHapsinator
+\code{hapsinatoR} is used to randomly select candies from a bland-selv-slik rack
+}
+\details{
+\code{handfulSize} has three possible arguments:
+\describe{
+\item{"small"}{\code{handfulSize} is normally distributed with mean 17 and sd = 3}
+\item{"medium"}{\code{handfulSize} is normally distributed with mean 24 and sd = 3}
+\item{"large"}{\code{handfulSize} is normally distributed with mean 31 and sd = 3}
+}
+}
+\examples{
+## Mix candy for 94kr with a price of 12kr/100g, 5 rows and 12 columns of candy, small handful size.
+hapsinatoR(12, 94, 5, 12, "small")
 }

@@ -6,6 +6,9 @@
 #' @export
 #' @return print(pricePer100g)
 #' 
+#' 
+
+
 plot_highlighted_grid <- function(candyShelf) {
   ggplot2::ggplot(candyShelf, aes(x = y, y = x, fill = status)) +
     geom_tile(color = "white") +
