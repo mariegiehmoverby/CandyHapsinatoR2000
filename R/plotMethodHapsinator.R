@@ -5,7 +5,6 @@
 #' @export
 #' @import ggplot2
 #' @method plot hapsinatoR
-
 plot.hapsinatoR <- function(x) {
   ggplot2::ggplot(x$candyShelf, aes(x = y, y = x, fill = status)) +
     ggplot2::geom_tile(color = "white") +
